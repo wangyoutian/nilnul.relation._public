@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9162372-81BE-4D8F-8321-E5D53372C59C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.relation</RootNamespace>
+    <AssemblyName>nilnul.relation%28130616</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Graph.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\nilnul%28130115\lib\nilnul%28130621.csproj">
+      <Project>{781321c7-7737-4b1f-ba13-048169502805}</Project>
+      <Name>nilnul%28130621</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.bit%28sln\lib\nilnul.bit130616.csproj">
+      <Project>{109c1344-5bea-4e1a-b662-2c7fe60ac428}</Project>
+      <Name>nilnul.bit130616</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.collection.set\lib\nilnul.collection.set130710.csproj">
+      <Project>{2aa0c2e4-554d-4e03-bb2d-9325def32ad0}</Project>
+      <Name>nilnul.collection.set130710</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.collection\lib\nilnul.collection%28131218.csproj">
+      <Project>{d36483ec-d896-4eb7-a876-2c030bab56e5}</Project>
+      <Name>nilnul.collection%28131218</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.obj\lib\nilnul.obj.csproj">
+      <Project>{9807479b-f797-4a18-9feb-0cc576c27308}</Project>
+      <Name>nilnul.obj</Name>
+    </ProjectReference>
+    <ProjectReference Include="nilnul.relation%28130616.csproj">
+      <Project>{6ce599b8-0ec7-4982-8f3b-63bb27cfbf94}</Project>
+      <Name>nilnul.relation%28130616</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

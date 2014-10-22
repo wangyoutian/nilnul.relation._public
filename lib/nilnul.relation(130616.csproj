@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9162372-81BE-4D8F-8321-E5D53372C59C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.relation</RootNamespace>
+    <AssemblyName>nilnul.relation%28130616</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acyclic.cs" />
+    <Compile Include="adj\AntiSymmetric%28T.cs" />
+    <Compile Include="adj\Compatible.cs" />
+    <Compile Include="adj\Equiv%28T.cs" />
+    <Compile Include="adj\Irreflexive%28T,TEq.cs" />
+    <Compile Include="adj\ExtendedOrder.cs" />
+    <Compile Include="adj\Preorder.cs" />
+    <Compile Include="adj\Reflexive.cs" />
+    <Compile Include="adj\IreflexiveOrder.cs" />
+    <Compile Include="adj\ReflexiveOrder.cs" />
+    <Compile Include="adj\Symmetric%28nilnul.cs" />
+    <Compile Include="adj\Transitive.cs" />
+    <Compile Include="adj\Irreflexive.cs" />
+    <Compile Include="AntiSymmetric%28T.cs" />
+    <Compile Include="AntiSymmetricI.cs" />
+    <Compile Include="AntiSymmetricRelationI1%28T.cs" />
+    <Compile Include="AntiSymmetricRelationI.cs" />
+    <Compile Include="AsymmetricI.cs" />
+    <Compile Include="AsymmetricRelationI3%28T.cs" />
+    <Compile Include="be\PartialFunction.cs" />
+    <Compile Include="ContainsI%28T.cs" />
+    <Compile Include="ContainsI%28TD,TR.cs" />
+    <Compile Include="IrreflexiveRelationI1%28T.cs" />
+    <Compile Include="op\Complement.cs" />
+    <Compile Include="op\Composite%28TDomain,TMiddle,TRange,TDE,TME,TRE.cs" />
+    <Compile Include="op\Intersect.cs" />
+    <Compile Include="op\Inverse.cs" />
+    <Compile Include="op\Union.cs" />
+    <Compile Include="Pair_DomainRange1%28TD,TR.cs" />
+    <Compile Include="partialFunc\be\Func.cs" />
+    <Compile Include="RelationI_Eq%28T,TEq.cs" />
+    <Compile Include="RelationI3%28T.cs" />
+    <Compile Include="RelationI2%28TDomain,TRange.cs" />
+    <Compile Include="RelationI_domainRange%28TDomain,TRange.cs" />
+    <Compile Include="Relation_DR%28TD,TR,TDEq,TREq.cs" />
+    <Compile Include="Relation_DR.cs" />
+    <Compile Include="BinaryRelationI.cs" />
+    <Compile Include="CheckTransitiveX.cs" />
+    <Compile Include="Congruence.cs" />
+    <Compile Include="Connected.cs" />
+    <Compile Include="AsymmetricRelationI%28T.cs" />
+    <Compile Include="AntiSymmetricRelationI%28T.cs" />
+    <Compile Include="AsymmetricRelationI2%28T.cs" />
+    <Compile Include="Equivalence.cs" />
+    <Compile Include="GraphI.cs" />
+    <Compile Include="Hasse.cs" />
+    <Compile Include="Intransitive%28TElement.cs" />
+    <Compile Include="matrix\AdjacencyMatrix.cs" />
+    <Compile Include="matrix\IntToBoolMatrix.cs" />
+    <Compile Include="matrix\PathMatrix.cs" />
+    <Compile Include="matrix\TransitiveReduceX.cs" />
+    <Compile Include="op\Composite.cs" />
+    <Compile Include="op\Projection.cs" />
+    <Compile Include="op\unary\Inverse.cs" />
+    <Compile Include="op\unary\Matrix.cs" />
+    <Compile Include="Order%28T.cs" />
+    <Compile Include="Pair_DomainRange%28TD,TR.cs" />
+    <Compile Include="PairAsRelation.cs" />
+    <Compile Include="pair\Eq%28T.cs" />
+    <Compile Include="pair\Inverse%28T.cs" />
+    <Compile Include="pair\Reflexive%28T,TEq.cs" />
+    <Compile Include="pair\Reflexive%28TElement.cs" />
+    <Compile Include="pair\Eq%28T,TEq.cs" />
+    <Compile Include="pair\StartWith%28T.cs" />
+    <Compile Include="pair\Reflexive.cs" />
+    <Compile Include="pair\adj\Irreflexive.cs" />
+    <Compile Include="PathMatrix.cs" />
+    <Compile Include="path\Concat.cs" />
+    <Compile Include="prop\Equiv%28T.cs" />
+    <Compile Include="prop\Reflexive.cs" />
+    <Compile Include="Range.cs" />
+    <Compile Include="Reachable.cs" />
+    <Compile Include="Relation.cs" />
+    <Compile Include="SetProduct.cs" />
+    <Compile Include="tagged\Pair%28T,TEq.cs" />
+    <Compile Include="tagged\Pair%28T.cs" />
+    <Compile Include="tagged\List%28T,TEq.cs" />
+    <Compile Include="TransitiveReduceX.cs" />
+    <Compile Include="TransitiveRelationI1%28T.cs" />
+    <Compile Include="TransitiveRelationI2.cs" />
+    <Compile Include="EquivalentRelationI%28T.cs" />
+    <Compile Include="EqualI%28T.cs" />
+    <Compile Include="EqualI.cs" />
+    <Compile Include="func\NegateResult%28T,TRDefault.cs" />
+    <Compile Include="func\InverseResult%28T,TR.cs" />
+    <Compile Include="func\NegateResult%28T.cs" />
+    <Compile Include="func\OrResult%28T,TR1,TR2.cs" />
+    <Compile Include="IntransitiveRelationI%28T.cs" />
+    <Compile Include="IrreflexiveRelationI%28T.cs" />
+    <Compile Include="SymmetricRelationI%28T.cs" />
+    <Compile Include="EquivalenceI%28T.cs" />
+    <Compile Include="TransitiveRelationI%28T.cs" />
+    <Compile Include="ReflexiveRelationI%28T.cs" />
+    <Compile Include="PathForkedException.cs" />
+    <Compile Include="PathX.cs" />
+    <Compile Include="IntToBoolMatrix.cs" />
+    <Compile Include="Path%28T.cs" />
+    <Compile Include="RelationI2%28T.cs" />
+    <Compile Include="RelationI%28T.cs" />
+    <Compile Include="EquivalencePartition.cs" />
+    <Compile Include="Equivalent.cs" />
+    <Compile Include="EquivalentI.cs" />
+    <Compile Include="EquivalentRelationI.cs" />
+    <Compile Include="IrreflexiveI.cs" />
+    <Compile Include="NullaryRelation.cs" />
+    <Compile Include="Pair%28T.cs" />
+    <Compile Include="PairI%28T.cs" />
+    <Compile Include="Relation%28T,TEq.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflexive.cs" />
+    <Compile Include="ReflexiveI.cs" />
+    <Compile Include="RelationAxiomized.cs" />
+    <Compile Include="RelationAxiomizedI.cs" />
+    <Compile Include="RelationI.cs" />
+    <Compile Include="RelationMatrix.cs" />
+    <Compile Include="RelationMatrixToTransitiveClosureByWarshallAlgorithm.cs" />
+    <Compile Include="RelationMatrixX.cs" />
+    <Compile Include="RelationX.cs" />
+    <Compile Include="Symmetric%28obsolete.cs" />
+    <Compile Include="SymmetricI %283%29.cs" />
+    <Compile Include="Transitive.cs" />
+    <Compile Include="TransitiveI.cs" />
+    <Compile Include="TransitiveRelation.cs" />
+    <Compile Include="TransitiveRelationI.cs" />
+    <Compile Include="tuple\NullaryTuple%28T.cs" />
+    <Compile Include="tuple\OrderedPair.cs" />
+    <Compile Include="tuple\OrderedPairI.cs" />
+    <Compile Include="tuple\Pair.cs" />
+    <Compile Include="tuple\Program.cs" />
+    <Compile Include="tuple\Square.cs" />
+    <Compile Include="tuple\Triple.cs" />
+    <Compile Include="tuple\TripleI.cs" />
+    <Compile Include="tuple\Tuple%28T.cs" />
+    <Compile Include="tuple\Tuple%28T1,T2%29.cs" />
+    <Compile Include="tuple\Tuple%28T1,T2,T3%29.cs" />
+    <Compile Include="tuple\Tuple%28T1,T2,T3,T4%29.cs" />
+    <Compile Include="tuple\Tuple.cs" />
+    <Compile Include="tuple\Tuple0I.cs" />
+    <Compile Include="tuple\TupleI%28T1%29.cs" />
+    <Compile Include="tuple\TupleI%28T1,T2%29.cs" />
+    <Compile Include="tuple\TupleI%28T1,T2,T3%29.cs" />
+    <Compile Include="tuple\TupleI%28T1,T2,T3,T4%29.cs" />
+    <Compile Include="tuple\TupleI.cs" />
+    <Compile Include="tuple\EmptyTuple%28T.cs" />
+    <Compile Include="WarshallAlgorithm.cs" />
+    <Compile Include="RelationI%28T,TEq.cs" />
+    <Compile Include="Pair%28T,TEq.cs" />
+    <Compile Include="Pair2%28T.cs" />
+    <Compile Include="Intransitive%28T,TEq.cs" />
+    <Compile Include="Irreflexive%28T,TEq.cs" />
+    <Compile Include="Transitive2.cs" />
+    <Compile Include="Relation%28T.cs" />
+    <Compile Include="Path2%28T%28nonEmpty.cs" />
+    <Compile Include="Path2%28T,TEq%28nonEmpty.cs" />
+    <Compile Include="Path_allowEmpty.cs" />
+    <Compile Include="Relation2%28T,TEq.cs" />
+    <Compile Include="Pair_withElementEq%28T.cs" />
+    <Compile Include="Pair_withElementEq%28T,TEq.cs" />
+    <Compile Include="Symmetric%28nilnul.cs" />
+    <Compile Include="Pair_withStaticElementEq%28T,TEq.cs" />
+    <Compile Include="Pair_withNoEq.cs" />
+    <Compile Include="Relation_pairWithNodeEqTyped%28T,TEq.cs" />
+    <Compile Include="Relation2%28T.cs" />
+    <Compile Include="Path_allowEmpty%28T.cs" />
+    <Compile Include="Path_allowEmpty_withStaticElementEq%28T,TEq.cs" />
+    <Compile Include="Path_allowEmpty_withDynamicElementEq%28T.cs" />
+    <Compile Include="TransitiveClosureX.cs" />
+    <Compile Include="Asymmetric%28T.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\nilnul%28130115\lib\nilnul%28130621.csproj">
+      <Project>{781321c7-7737-4b1f-ba13-048169502805}</Project>
+      <Name>nilnul%28130621</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.bit%28sln\lib\nilnul.bit130616.csproj">
+      <Project>{109c1344-5bea-4e1a-b662-2c7fe60ac428}</Project>
+      <Name>nilnul.bit130616</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.collection.set\lib\nilnul.collection.set130710.csproj">
+      <Project>{2aa0c2e4-554d-4e03-bb2d-9325def32ad0}</Project>
+      <Name>nilnul.collection.set130710</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.collection\lib\nilnul.collection%28131218.csproj">
+      <Project>{d36483ec-d896-4eb7-a876-2c030bab56e5}</Project>
+      <Name>nilnul.collection%28131218</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.obj\lib\nilnul.obj.csproj">
+      <Project>{9807479b-f797-4a18-9feb-0cc576c27308}</Project>
+      <Name>nilnul.obj</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="func\be\" />
+    <Folder Include="order\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="order.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
